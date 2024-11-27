@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-import '../../data_source/models/doctor_data.dart';
+import '../../../data/data_source/models/doctor_data.dart';
 
 enum States {homeInitial, homeDataLoading, homeDataSuccess, homeDataError}
 class HomeState extends Equatable

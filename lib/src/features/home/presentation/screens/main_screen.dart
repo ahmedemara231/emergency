@@ -4,8 +4,8 @@ import 'package:get_it/get_it.dart';
 import '../../../../core/helpers/app_widgets/error_builder/screen.dart';
 import '../../../../core/helpers/base_widgets/image_handler.dart';
 import '../../../../core/helpers/base_widgets/text.dart';
-import '../../blocs/home/cubit.dart';
-import '../../blocs/home/state.dart';
+import '../blocs/home/cubit.dart';
+import '../blocs/home/state.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

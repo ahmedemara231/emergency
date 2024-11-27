@@ -1,7 +1,7 @@
-import 'package:emergency/src/features/home/blocs/home/state.dart';
+import 'package:emergency/src/features/home/presentation/blocs/home/state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../repositories/get.dart';
+import '../../../data/repositories/get.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit(this._homeGetRepo) : super(HomeState.initial());
