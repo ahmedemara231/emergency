@@ -103,8 +103,8 @@ class FontSize {
 }
 
 class ScreenSizes {
-  static double width = 360;
-  static double height = 690;
+  static double width = 428;
+  static double height = 926;
 }
 
 // class FontWeightManager {
