@@ -1,13 +1,13 @@
 import 'package:emergency/src/core/helpers/base_extensions/context/routes.dart';
 import 'package:emergency/src/core/helpers/base_widgets/text.dart';
-import 'package:emergency/src/features/onboarding/presentation/user_type_selection_screen.dart';
 import 'package:emergency/src/features/onboarding/presentation/widgets/onboarding_controller.dart';
 import 'package:emergency/src/features/onboarding/presentation/widgets/onboarding_next_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexcolor/hexcolor.dart';
+
+import '../../screens/user_type_selection_screen.dart';
 
 class OnboardingNavigation extends StatelessWidget {
   const OnboardingNavigation({super.key});

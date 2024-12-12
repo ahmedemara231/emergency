@@ -16,14 +16,14 @@ class OnboardingContent extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         SizedBox(
-          height: 272.h,
+          height: 220.h,
           child: SvgPicture.asset(
             model.imagePath,
             fit: BoxFit.fill,
           ),
         ),
         SizedBox(
-          height: 32.87.h,
+          height: 30.h,
         ),
         AppText(
           text: model.title,
@@ -35,12 +35,14 @@ class OnboardingContent extends StatelessWidget {
         SizedBox(
           height: 8.h,
         ),
-        AppText(
-          text: model.body,
-          fontWeight: FontWeight.w400,
-          fontSize: 20.sp,
-          color: HexColor('#333333'),
-          textAlign: TextAlign.center,
+        FittedBox(
+          child: AppText(
+            text: model.body,
+            fontWeight: FontWeight.w400,
+            fontSize: 20.sp,
+            color: HexColor('#333333'),
+            textAlign: TextAlign.center,
+          ),
         )
       ],
     );
