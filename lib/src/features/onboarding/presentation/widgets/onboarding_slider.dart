@@ -19,7 +19,9 @@ class OnboardingSlider extends StatelessWidget {
       controller: controller,
       itemCount: onboardingList.length,
       itemBuilder: (context, i) {
-        return OnboardingContent(onboardingList[i]);
+        return OnboardingContent(
+          onboardingList[i],
+        );
       },
     );
   }

@@ -27,7 +27,7 @@ class OnboardingNextButton extends StatelessWidget {
                 color: fillColor,
                 progress: progress,
               ),
-              size: Size(58.w, 58.h),
+              size: const Size(58, 58),
             ),
             Container(
               width: 42.h,

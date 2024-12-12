@@ -1,6 +1,10 @@
+import 'package:emergency/src/core/helpers/base_extensions/context/routes.dart';
+import 'package:emergency/src/core/helpers/base_widgets/text.dart';
+import 'package:emergency/src/features/onboarding/presentation/user_type_selection_screen.dart';
 import 'package:emergency/src/features/onboarding/presentation/widgets/onboarding_controller.dart';
 import 'package:emergency/src/features/onboarding/presentation/widgets/onboarding_next_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -34,37 +38,33 @@ class OnboardingNavigation extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
-                      // context.go(AppRouter.kLoginView);
+                      context.removeOldRoute(const UserTypeSelectionScreen());
                     },
-                    child: Text(
-                      'تخطى',
-                      style: TextStyle(
-                        fontFamily: 'Tajawal',
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20,
-                        color: HexColor('#333333'),
-                      ),
+                    child: AppText(
+                      text: 'تخطى',
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20.sp,
+                      color: HexColor('#333333'),
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],
               )
-            : Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  OnboardingNextButton(
-                    fillColor: HexColor('#0071CD'),
-                    onTap: () {
-                      if (myController.currentPage <
-                          myController.onboardingList.length - 1) {
-                        myController.next();
-                      } else {
-                        //
-                      }
-                    },
-                    progress: (myController.currentPage + 1) /
-                        myController.onboardingList.length,
-                  ),
-                ],
+            : Align(
+                alignment: Alignment.centerLeft,
+                child: OnboardingNextButton(
+                  fillColor: HexColor('#0071CD'),
+                  onTap: () {
+                    if (myController.currentPage <
+                        myController.onboardingList.length - 1) {
+                      myController.next();
+                    } else {
+                      context.removeOldRoute(const UserTypeSelectionScreen());
+                    }
+                  },
+                  progress: (myController.currentPage + 1) /
+                      myController.onboardingList.length,
+                ),
               );
       },
     );

@@ -35,6 +35,8 @@ class AppPadding {
   static double pH16 = 16.0.h;
   static double pH18 = 18.0.h;
   static double pH20 = 20.0.h;
+  static double pH24 = 24.0.h;
+  static double pH40 = 40.0.h;
 
   // VALUES FOR WIDTH
   static double pW2 = 2.0.h;
