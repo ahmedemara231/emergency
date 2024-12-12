@@ -10,7 +10,7 @@ class Constants {
   static String phoneRegExp =
       r'(^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]' r'{4,6}$)';
 
-  static var appColor = HexColor('##0071CD');
+  static var appColor = HexColor('#0071CD');
   static var scaffoldBackGroundColor = HexColor('#FCFDFF');
   static var kPrimaryBGColor = HexColor('#FCFDFF');
   static var kPrimaryMainColor = HexColor("#0070CD");
@@ -22,6 +22,12 @@ class Constants {
   static var kNeutral300Color = HexColor("#B3B3B3");
 
   static String tajawalFontFamily = "Tajawal";
+
+  static List<String> userRoles = [
+    'مستخدم',
+    'عيادة',
+    'ممرض',
+  ];
 
   //date time
   // static String dataTime = Jiffy().yMMMd;

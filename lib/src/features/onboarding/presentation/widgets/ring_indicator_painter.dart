@@ -13,7 +13,7 @@ class RingIndicatorPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    double strokeWidth = 3.w; //
+    double strokeWidth = 3; //
     double padding = 8;
     final Rect rect = Rect.fromLTWH(
       padding,
@@ -37,7 +37,7 @@ class RingIndicatorPainter extends CustomPainter {
     canvas.drawArc(
       // fill color
       rect,
-      -3.141592653589793 / 2, // start angel
+      3.141592653589793 / 15, // start angel
       sweepAngle, // sweep angel
       false,
       Paint()

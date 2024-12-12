@@ -18,10 +18,10 @@ class OnboardingScreen extends StatelessWidget {
     OnboardingController myController = GetIt.instance<OnboardingController>();
     List<OnboardingModel> onboardingList = getOnBoardingList();
 
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Constants.scaffoldBackGroundColor,
-        body: Padding(
+    return Scaffold(
+      backgroundColor: Constants.scaffoldBackGroundColor,
+      body: SafeArea(
+        child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
           child: Column(
             children: [
@@ -32,7 +32,7 @@ class OnboardingScreen extends StatelessWidget {
                       ? Column(
                           children: [
                             SizedBox(
-                              height: 35.13.h,
+                              height: 22.h,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
@@ -50,7 +50,7 @@ class OnboardingScreen extends StatelessWidget {
                           ],
                         )
                       : SizedBox(
-                          height: 152.13.h,
+                          height: 139.h,
                         );
                 },
               ),
@@ -64,7 +64,7 @@ class OnboardingScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 84.h,
+                height: 95.h,
               ),
               OnboardingDotsIndicator(
                 controller: myController.pageController,

@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:emergency/src/features/onboarding/presentation/onboarding_screen.dart';
+import 'package:emergency/src/features/onboarding/presentation/user_type_selection_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
