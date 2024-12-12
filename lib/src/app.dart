@@ -7,6 +7,7 @@ import 'core/data_source/local/shared.dart';
 import 'core/helpers/data_types/permession_process_model.dart';
 import 'core/helpers/helper_methods/handle_permissions.dart';
 import 'core/shared/observers/route_observer.dart';
+import 'features/auth/login_screen.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -48,7 +49,7 @@ class _AppState extends State<App> {
         // theme: CacheHelper.getInstance().shared.getBool('appTheme') == false
         //     ? ThemeData.light()
         //     : ThemeData.dark(),
-        home: const OnboardingScreen(),
+        home: const LoginScreen(),
         builder: EasyLoading.init(),
       ),
     );
