@@ -25,6 +25,7 @@ class AppText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      softWrap: true,
       textAlign: textAlign,
       maxLines: maxLines ?? 3,
       overflow: TextOverflow.ellipsis,
@@ -34,8 +35,8 @@ class AppText extends StatelessWidget {
           color: color,
           decoration: textDecoration,
           overflow: TextOverflow.ellipsis,
-          fontFamily: 'Tajawal',
-          height: 1.2.h),
+          height: 1.2.h
+      ),
     );
   }
 }
