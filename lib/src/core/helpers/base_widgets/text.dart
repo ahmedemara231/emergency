@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class AppText extends StatelessWidget {
   final String text;
@@ -25,17 +26,18 @@ class AppText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textAlign: textAlign,
+      textAlign: textAlign ?? TextAlign.center,
       maxLines: maxLines ?? 3,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
-          fontSize: fontSize,
-          fontWeight: fontWeight,
-          color: color,
-          decoration: textDecoration,
-          overflow: TextOverflow.ellipsis,
-          fontFamily: 'Tajawal',
-          height: 1.2.h),
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        color: color ?? HexColor('#000000'),
+        decoration: textDecoration,
+        overflow: TextOverflow.ellipsis,
+        fontFamily: 'Tajawal',
+        height: 1.2.h,
+      ),
     );
   }
 }
