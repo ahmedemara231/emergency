@@ -6,7 +6,6 @@ import 'core/helpers/data_types/permession_process_model.dart';
 import 'core/helpers/helper_methods/handle_permissions.dart';
 import 'core/shared/observers/route_observer.dart';
 
-import 'features/auth/login_screen.dart';
 import 'features/home/presentation/screens/main_screen.dart';
 
 

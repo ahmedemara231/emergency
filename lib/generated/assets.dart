@@ -24,5 +24,15 @@ class Assets {
   static const String translationArSA = 'assets/translation/ar-SA.json';
   static const String translationEnUS = 'assets/translation/en-US.json';
 
+  static const String iconsFacebookIcon = "assets/icons/facebook_icon.svg";
 
+  static const String iconsGoogleIcon = "assets/icons/google_icon.svg";
+  static const String imagesCircleButtonWithCheckMark = "assets/images/circle_button_with_check_mark.svg";
+
+  /// Assets for imagesForgetPasswordImage
+  /// assets/images/forget_password_image.svg
+  static const String imagesForgetPasswordImage = "assets/images/forget_password_image.svg";
+
+  static const String imagesResetPasswordImage = "assets/images/reset_password_image.svg";
+  static const String imagesOtpImage = "assets/images/otp_image.svg";
 }
