@@ -1,14 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:emergency/src/features/onboarding/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'core/data_source/local/shared.dart';
 import 'core/helpers/data_types/permession_process_model.dart';
 import 'core/helpers/helper_methods/handle_permissions.dart';
 import 'core/shared/observers/route_observer.dart';
+
 import 'features/auth/login_screen.dart';
 import 'features/home/presentation/screens/main_screen.dart';
+
 
 class App extends StatefulWidget {
   const App({super.key});

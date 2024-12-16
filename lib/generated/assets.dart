@@ -24,4 +24,5 @@ class Assets {
   static const String translationArSA = 'assets/translation/ar-SA.json';
   static const String translationEnUS = 'assets/translation/en-US.json';
 
+
 }
