@@ -26,17 +26,17 @@ class AppText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textAlign: textAlign ?? TextAlign.center,
+      softWrap: true,
+      textAlign: textAlign,
       maxLines: maxLines ?? 3,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
-        fontSize: fontSize,
-        fontWeight: fontWeight,
-        color: color ?? HexColor('#000000'),
-        decoration: textDecoration,
-        overflow: TextOverflow.ellipsis,
-        fontFamily: 'Tajawal',
-        height: 1.2.h,
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          color: color,
+          decoration: textDecoration,
+          overflow: TextOverflow.ellipsis,
+          height: 1.2.h
       ),
     );
   }
