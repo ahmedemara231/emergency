@@ -10,7 +10,7 @@ class Constants {
   static String phoneRegExp =
       r'(^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]' r'{4,6}$)';
 
-  static var appColor = HexColor('##7EAD7B');
+  static var appColor = HexColor("#7EAD7B");
   static var scaffoldBackGroundColor = HexColor('#FCFDFF');
   static var kPrimaryBGColor = HexColor('#FCFDFF');
   static var kPrimaryMainColor = HexColor("#0070CD");
@@ -24,6 +24,7 @@ class Constants {
   static var kNeutral500Color = HexColor("#FFFFFF");
   static var kNeutral600Color = HexColor("#666666");
   static var kNeutral700Color = HexColor("#4D4D4D");
+  static var kNeutral800Color = HexColor("#333333");
   static var kNeutral900Color = HexColor("#1A1A1A");
   static var kCursorBlueColor = HexColor("#041461");
 
