@@ -26,9 +26,9 @@ class AppText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: textAlign ?? TextAlign.center,
+      maxLines: maxLines ?? 5,
       softWrap: true,
-      textAlign: textAlign,
-      maxLines: maxLines ?? 3,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
           fontSize: fontSize,

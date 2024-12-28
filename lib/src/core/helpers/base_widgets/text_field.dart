@@ -75,6 +75,7 @@ class AppTextFormField extends StatelessWidget {
       style: style ?? TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500),
       decoration: InputDecoration(
         isDense: true,
+        prefixIconConstraints: BoxConstraints(maxHeight: 24.h, maxWidth: 32.w),
         fillColor: fillColor ?? Colors.white,
         filled: filled ?? false,
         contentPadding: contentPadding ??
