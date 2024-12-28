@@ -7,6 +7,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/helpers/data_types/permession_process_model.dart';
 import 'core/helpers/helper_methods/handle_permissions.dart';
 import 'core/shared/observers/route_observer.dart';
+import 'features/home/presentation/screens/main_screen.dart';
+
+
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -50,7 +53,7 @@ class _AppState extends State<App> {
         //CacheHelper.getInstance().shared.getBool('appTheme') == false
         //     ? ThemeData.light()
         //     : ThemeData.dark(),
-        home: const ProfileScreen(),
+        home: const Home(),
         builder: EasyLoading.init(),
       ),
     );

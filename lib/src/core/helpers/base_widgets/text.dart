@@ -28,15 +28,15 @@ class AppText extends StatelessWidget {
       text,
       textAlign: textAlign ?? TextAlign.center,
       maxLines: maxLines ?? 5,
+      softWrap: true,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
-        fontSize: fontSize,
-        fontWeight: fontWeight,
-        color: color ?? HexColor('#000000'),
-        decoration: textDecoration,
-        overflow: TextOverflow.ellipsis,
-        fontFamily: 'Tajawal',
-        height: 1.2.h,
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          color: color,
+          decoration: textDecoration,
+          overflow: TextOverflow.ellipsis,
+          height: 1.2.h
       ),
     );
   }
