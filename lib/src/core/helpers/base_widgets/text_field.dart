@@ -75,23 +75,19 @@ class AppTextFormField extends StatelessWidget {
       style: style ?? TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500),
       decoration: InputDecoration(
         isDense: true,
+        prefixIconConstraints: BoxConstraints(maxHeight: 24.h, maxWidth: 32.w),
         fillColor: fillColor ?? Colors.white,
         filled: filled ?? false,
-        contentPadding: contentPadding ??
-            EdgeInsets.symmetric(
+        contentPadding: contentPadding ?? EdgeInsets.symmetric(
               vertical: 18.5.h,
             ),
         border: border,
-        enabledBorder:
-            enabledBorder ?? buildOutlineInputBorder(color: Constants.appColor),
-        focusedBorder:
-            focusedBorder ?? buildOutlineInputBorder(color: Constants.appColor),
-        focusedErrorBorder:
-            buildOutlineInputBorder(color: Constants.kError400Color),
+        enabledBorder: enabledBorder ?? buildOutlineInputBorder(color: Constants.appColor),
+        focusedBorder: focusedBorder ?? buildOutlineInputBorder(color: Constants.appColor),
+        focusedErrorBorder: buildOutlineInputBorder(color: Constants.kError400Color),
         errorBorder: buildOutlineInputBorder(color: Constants.kError400Color),
         hintText: hintText,
-        hintStyle: hintStyle ??
-            TextStyle(
+        hintStyle: hintStyle ?? TextStyle(
               fontFamily: 'Tajawal',
               fontSize: 16.sp,
               fontWeight: FontWeight.w500,
@@ -101,8 +97,7 @@ class AppTextFormField extends StatelessWidget {
         labelText: labelText,
         labelStyle: labelStyle,
         prefixIcon: prefixIcon,
-        prefix: prefix ??
-            const Padding(
+        prefix: prefix ?? const Padding(
               padding: EdgeInsets.symmetric(horizontal: 6),
             ),
         suffixIcon: suffixIcon,

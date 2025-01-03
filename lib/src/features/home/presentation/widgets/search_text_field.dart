@@ -12,11 +12,13 @@ class SearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppTextFormField(
+      autoValidateMode: AutovalidateMode.disabled,
       controller: searchController,
       prefixIcon: Image.asset(Assets.iconsSearchIcon),
       hintText: 'ابحث عن خدمة التم...'.tr(),
+      contentPadding: EdgeInsets.symmetric(vertical: 15.h, horizontal: 10.w),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(40.r)
+        borderRadius: BorderRadius.circular(10.r)
       ),
       filled: true,
       fillColor: Colors.white,

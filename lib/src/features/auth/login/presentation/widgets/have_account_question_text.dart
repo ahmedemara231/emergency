@@ -1,4 +1,6 @@
 import 'package:emergency/src/core/constants/app_constants.dart';
+import 'package:emergency/src/core/helpers/base_extensions/context/routes.dart';
+import 'package:emergency/src/features/auth/sign_up/presentation/screens/sign_up_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -31,7 +33,8 @@ class HaveAccountQuestionText extends StatelessWidget {
                   fontSize: 16.sp,
                   color: Constants.appColor,
                 ),
-                recognizer: TapGestureRecognizer()..onTap = () {},
+                recognizer: TapGestureRecognizer()..onTap =
+                    () => context.normalNewRoute(const SignUpScreen()),
               ),
             ],
           ),

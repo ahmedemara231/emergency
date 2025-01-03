@@ -1,3 +1,5 @@
+import 'package:emergency/src/core/data_source/remote/api_service/service/request_model/request_method.dart';
+
 import '../../../../core/data_source/remote/api_service/service/Api_constants.dart';
 import '../../../../core/data_source/remote/api_service/service/Lang_methods.dart';
 import '../../../../core/data_source/remote/api_service/service/api_request.dart';
@@ -12,7 +14,7 @@ class HomeDataSourceImpl{
   Future<List<DoctorInfo>> getHomeData()async{
     final homeResponse = await apiService.callApi(
         request: RequestModel(
-            method: Methods.GET,
+            method: RequestMethod.get,
             endPoint: ApiConstants.home,
             headers: HeadersWithToken()
         )

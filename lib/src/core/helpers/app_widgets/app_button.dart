@@ -8,7 +8,12 @@ class AppButton extends StatelessWidget {
   const AppButton({super.key,
     required this.text,
     required this.onPressed,
+    this.color,
+    this.textColor
   });
+
+  final Color? color;
+  final Color? textColor;
 
   final String text;
   final VoidCallback onPressed;
@@ -17,12 +22,12 @@ class AppButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: Constants.appColor,
+        backgroundColor: color?? Constants.appColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.r)
         )
       ),
-      child: AppText(text: text, color: Colors.white),
+      child: AppText(text: text, color: textColor?? Colors.white),
     );
   }
 }

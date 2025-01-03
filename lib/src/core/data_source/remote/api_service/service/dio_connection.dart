@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
+import 'package:emergency/src/core/data_source/remote/api_service/service/request_model/request_method.dart';
 import 'package:emergency/src/core/data_source/remote/api_service/service/request_model/request_model.dart';
 import 'package:multiple_result/multiple_result.dart';
 import 'Api_constants.dart';
@@ -64,7 +65,7 @@ class DioConnection implements ApiService {
             options: Options(
                 receiveDataWhenStatusError: true,
                 responseType: request.responseType?? ResponseType.json,
-                method: request.method,
+                method: request.method.requestMethodAsString,
                 headers: await request.headers?.toJson()
             ),
             data: request.isFormData?

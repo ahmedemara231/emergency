@@ -1,6 +1,8 @@
+import 'package:emergency/src/core/helpers/base_extensions/context/routes.dart';
 import 'package:emergency/src/core/helpers/base_widgets/app_text_button.dart';
 import 'package:emergency/src/core/helpers/base_widgets/text.dart';
 import 'package:emergency/src/features/auth/otp/presentation/widgets/otp_text_field.dart';
+import 'package:emergency/src/features/auth/reset_password/presentation/reset_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -101,7 +103,9 @@ class _OtpFormState extends State<OtpFormWithButton> {
             height: 32.h,
           ),
           AppTextButton(
-            onTap: _verifyOtp,
+            onTap: () {
+              context.normalNewRoute(const ResetPasswordScreen());
+            },
             text: 'ارسال',
           ),
         ],

@@ -1,6 +1,8 @@
+import 'package:emergency/src/core/helpers/base_extensions/context/routes.dart';
 import 'package:emergency/src/core/helpers/base_widgets/text.dart';
 import 'package:emergency/src/core/helpers/base_widgets/text_field.dart';
 import 'package:emergency/src/core/helpers/helper_methods/validators.dart';
+import 'package:emergency/src/features/auth/forget_password/presentation/forget_passsword_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -61,9 +63,7 @@ class _LoginFormState extends State<LoginForm> {
           Align(
             alignment: Alignment.centerLeft,
             child: GestureDetector(
-              onTap: () {
-                //
-              },
+              onTap: () => context.normalNewRoute(const ForgetPassswordScreen()),
               child: AppText(
                 text: 'نسيت كلمة المرور',
                 fontSize: 16.sp,
