@@ -9,30 +9,28 @@ class Assets {
   static const String fontsTajawalLight = 'assets/fonts/Tajawal-Light.ttf';
   static const String fontsTajawalMedium = 'assets/fonts/Tajawal-Medium.ttf';
   static const String fontsTajawalRegular = 'assets/fonts/Tajawal-Regular.ttf';
+  static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
   static const String iconsGoBackArrow = 'assets/icons/go_back_arrow.svg';
   static const String iconsGoNextArrow = 'assets/icons/go_next_arrow.svg';
+  static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
   static const String iconsPenIcon = 'assets/icons/pen_icon.png';
   static const String iconsSearchIcon = 'assets/icons/search_icon.png';
   static const String iconsWaterPlant = 'assets/icons/water_plant.png';
+  static const String imagesCircleButtonWithCheckMark = 'assets/images/circle_button_with_check_mark.svg';
+  static const String imagesForgetPasswordImage = 'assets/images/forget_password_image.svg';
   static const String imagesGoogle = 'assets/images/google.png';
   static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesNursing = 'assets/images/nursing.png';
   static const String imagesOnboarding1 = 'assets/images/onboarding1.svg';
   static const String imagesOnboarding2 = 'assets/images/onboarding2.svg';
   static const String imagesOnboarding3 = 'assets/images/onboarding3.svg';
+  static const String imagesOtpImage = 'assets/images/otp_image.svg';
+  static const String imagesPain = 'assets/images/pain.png';
   static const String imagesPana = 'assets/images/pana.png';
+  static const String imagesResetPasswordImage = 'assets/images/reset_password_image.svg';
+  static const String imagesSyringe = 'assets/images/syringe.png';
+  static const String imagesTemp = 'assets/images/temp.png';
   static const String translationArSA = 'assets/translation/ar-SA.json';
   static const String translationEnUS = 'assets/translation/en-US.json';
 
-  static const String iconsFacebookIcon = "assets/icons/facebook_icon.svg";
-
-  static const String iconsGoogleIcon = "assets/icons/google_icon.svg";
-  static const String imagesCircleButtonWithCheckMark = "assets/images/circle_button_with_check_mark.svg";
-
-  /// Assets for imagesForgetPasswordImage
-  /// assets/images/forget_password_image.svg
-  static const String imagesForgetPasswordImage = "assets/images/forget_password_image.svg";
-
-  static const String imagesResetPasswordImage = "assets/images/reset_password_image.svg";
-  static const String imagesOtpImage = "assets/images/otp_image.svg";
 }

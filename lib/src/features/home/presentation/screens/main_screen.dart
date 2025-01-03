@@ -1,17 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:emergency/generated/assets.dart';
-import 'package:emergency/main.dart';
 import 'package:emergency/src/core/constants/app_constants.dart';
-import 'package:emergency/src/core/helpers/app_widgets/error_handling.dart/unexpected_error_handler.dart';
 import 'package:emergency/src/core/helpers/base_extensions/context/padding.dart';
-import 'package:emergency/src/core/helpers/base_widgets/text_field.dart';
+import 'package:emergency/src/features/home/presentation/widgets/popular_nursing_service.dart';
 import 'package:emergency/src/features/home/presentation/widgets/search_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
 import '../../../../core/helpers/app_widgets/error_builder/screen.dart';
-import '../../../../core/helpers/base_widgets/image_handler.dart';
 import '../../../../core/helpers/base_widgets/text.dart';
 import '../blocs/home/cubit.dart';
 import '../blocs/home/state.dart';
@@ -19,8 +16,23 @@ import '../widgets/emergency_service.dart';
 import '../widgets/services.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  Home({super.key});
 
+  List<PopularNursingService> services = [
+    PopularNursingService(
+      text: 'تغيير جروح'.tr(),
+      img: Assets.imagesPain
+    ),
+    PopularNursingService(
+        text: 'اخد حقن'.tr(),
+        img: Assets.imagesSyringe
+    ),
+    PopularNursingService(
+        text: 'قياس الحرارة'.tr(),
+        img: Assets.imagesTemp
+    ),
+
+  ];
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -108,7 +120,9 @@ class Home extends StatelessWidget {
                             padding: context.horizontalSymmetricPadding(30.w),
                             child: const EmergencyService(),
                           ),
-
+                          Column(
+                            children: List.generate(services.length, (index) => services[index],),
+                          ),
                         ],
                       ),
                     ],

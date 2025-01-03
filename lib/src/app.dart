@@ -49,7 +49,7 @@ class _AppState extends State<App> {
         // theme: CacheHelper.getInstance().shared.getBool('appTheme') == false
         //     ? ThemeData.light()
         //     : ThemeData.dark(),
-        home: const Home(),
+        home: Home(),
         builder: EasyLoading.init(),
       ),
     );
